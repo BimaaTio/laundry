@@ -1,11 +1,10 @@
 <?php 
 session_start();
 require '../config/functions.php';
-if (!isset($_SESSION["admin"])) {
+if (!isset($_SESSION["login"])) {
     echo "<script>window.location = '../login.php?msg=Login Terlebih Dahulu!'</script>";
     exit;
   }
-  $profil = query("SELECT * FROM admin")[0];
 ?>
 
 <!DOCTYPE html>
