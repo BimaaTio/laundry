@@ -49,7 +49,12 @@
                 Explorer 4.0
               </td>
               <td>Win 95+</td>
-              <td> 4</td>
+              <td>
+                
+                <button type="submit" class="badge bg-danger">Hapus</button>
+                ||
+                <button type="submit" class="badge bg-warning">Edit</button>
+              </td>
             </tr>
           </tbody>
         </table>
