@@ -199,11 +199,53 @@ if (!isset($_SESSION["login"])) {
         "responsive": true,
         "lengthChange": false,
         "autoWidth": false,
+        "info": false,
         "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
       }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-      
+
     });
   </script>
+
+
+  <!-- Modal Outlet -->
+  <div class="modal fade" id="outlet">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Tambah Outlet</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Nama Outlet</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nama Outlet">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Alamat</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Alamat Outlet">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Telepon</label>
+                <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Telepon">
+              </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </form>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+
 </body>
 
 </html>
